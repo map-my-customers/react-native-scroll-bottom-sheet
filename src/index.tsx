@@ -5,7 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
-
+//@ts-nocheck
 import React, { Component, RefObject } from 'react';
 import {
   Dimensions,
@@ -329,7 +329,7 @@ export class ScrollBottomSheet<T extends any> extends Component<Props<T>> {
       ios: IOS_NORMAL_DECELERATION_RATE,
     });
     this.decelerationRate = new Value(initialDecelerationRate);
-
+    
     const handleGestureState = new Value<GestureState>(-1);
     const handleOldGestureState = new Value<GestureState>(-1);
     const drawerGestureState = new Value<GestureState>(-1);
