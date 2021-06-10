@@ -869,7 +869,6 @@ export class ScrollBottomSheet<T extends any> extends Component<Props<T>> {
         <TapGestureHandler
           maxDurationMs={100000}
           ref={this.masterDrawer}
-          maxDeltaY={initialSnap - this.getNormalisedSnapPoints()[0]}
           shouldCancelWhenOutside={false}
         >
           {Content}
@@ -884,7 +883,6 @@ export class ScrollBottomSheet<T extends any> extends Component<Props<T>> {
       <TapGestureHandler
         maxDurationMs={100000}
         ref={this.masterDrawer}
-        maxDeltaY={initialSnap - this.getNormalisedSnapPoints()[0]}
       >
         <View style={StyleSheet.absoluteFillObject} pointerEvents="box-none">
           {Content}
