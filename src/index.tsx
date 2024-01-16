@@ -723,6 +723,8 @@ export class ScrollBottomSheet<T extends any> extends Component<Props<T>> {
           ref={this.drawerContentRef}
           simultaneousHandlers={[this.scrollComponentRef, this.masterDrawer]}
           shouldCancelWhenOutside={false}
+          activeOffsetY={[-1, 1]} 
+          failOffsetX={[-5, 5]}
           onGestureEvent={this.onDrawerGestureEvent}
           onHandlerStateChange={this.onDrawerGestureEvent}
         >
